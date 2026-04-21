@@ -10,10 +10,10 @@ extern "C" {
 /*
  * Class:     com_scm_ScmNative
  * Method:    receiveFdFromBootstrap
- * Signature: (Ljava/lang/String;)Ljava/io/FileDescriptor;
+ * Signature: ()I
  */
-JNIEXPORT jobject JNICALL Java_com_scm_ScmNative_receiveFdFromBootstrap
-  (JNIEnv *, jclass, jstring);
+JNIEXPORT jint JNICALL Java_com_scm_ScmNative_receiveFdFromBootstrap
+  (JNIEnv *, jclass);
 
 #ifdef __cplusplus
 }
