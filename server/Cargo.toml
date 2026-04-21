@@ -1,0 +1,18 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+nix = { version = "0.27", features = ["sched", "socket", "fs", "uio"] }
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.7", features = ["codec"] }
+pico-args = "0.5"
+anyhow = "1.0"
+futures = "0.3"
+bytes = "1.11.0"
+procfs = "0.16"
+
+[[bin]]
+name = "server"
+path = "src/main.rs"
